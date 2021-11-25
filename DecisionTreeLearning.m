@@ -21,7 +21,5 @@ tree(1).threshold = attrThresh(features,bestFeat, split); %store the threshold w
 [L, R] = splitData(data, bestFeat, split);
 
 % set the kids array to be two new sub trees
-% leftBranch = DecisionTreeLearning(L(:,1:4), L(:, 5));
-% rightBranch = DecisionTreeLearning(R(:,1:4), R(:, 5));
-tree(1).kids = [DecisionTreeLearning(L(:,1:4),L(:, 5)), DecisionTreeLearning(R(:,1:4),R(:, 5))];
+tree(1).kids = {DecisionTreeLearning(L(:,1:4),L(:, 5)), DecisionTreeLearning(R(:,1:4),R(:, 5))};
 end

@@ -1,5 +1,7 @@
 function [all_attr_ents] = get_all_attr_entropy(data, feature_no)
     [rows, ~] = size(data);
+    feature_no;
+    data;
     b = get_freq(data(:, feature_no));
     [~, b_col] = size(b);
     tot = 0;
