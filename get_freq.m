@@ -1,4 +1,3 @@
-
 function [freq] = get_freq(x)
     a = tabulate(x);
     a(:,3) = [];
